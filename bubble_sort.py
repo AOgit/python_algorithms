@@ -1,5 +1,8 @@
+import datetime 
 
 array = [6, 5, 3, 1, 8, 7, 2, 4]
+
+a = datetime.datetime.now()
 
 def bubble_sort(arr):
     changeling = len(arr)-1
@@ -13,3 +16,9 @@ def bubble_sort(arr):
     return arr 
     
 print bubble_sort(array)
+
+b = datetime.datetime.now()
+
+c = b - a
+
+print c.microseconds
